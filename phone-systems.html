@@ -20,18 +20,20 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" media="screen" href="css/custom.css">
     <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130241502-7"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-130241502-7');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130241502-7');
     </script>
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
@@ -40,8 +42,7 @@
     </title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Phone Systems, VoIP">
-    <meta name="keywords"
-        content="Telecommunication Industry, NEC, Samsung, Digital, IP, Phone Systems, SIP, Hosted Voice Services, Spring Hill, Hernando, New Port Richey, Tampa">
+    <meta name="keywords" content="Telecommunication Industry, NEC, Samsung, Digital, IP, Phone Systems, SIP, Hosted Voice Services, Spring Hill, Hernando, New Port Richey, Tampa">
     <meta name="author" content="Performance Media Solutions Group">
     <!-- GTM Tracking Container -->
 
@@ -50,189 +51,106 @@
 </head>
 <!-- Body-->
 
-<body class="bg-light">
+<body>
+    <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    <!-- Begin Mobile Nav-->
+    <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fas fa-times"></i></span>
+        <div class="px-4 pb-4">
+            <h6 class="fonet">Menu</h6>
 
-    <!-- Google Tag Manager (noscript)-->
-
-        <!-- Mobile Menu-->
-        <div class="accordion mobile-menu" id="accordion-menu">
-            <!-- Home-->
-            <div class="card">
-              <div class="card-header text-white"><a class="mobile-menu-link" href="index.html"><i class="fas fa-home"></i> Home</a></div>
-            </div>
-            <!-- About-->
-            <div class="card">
-              <div class="card-header"><a class="mobile-menu-link" href="about.html"><i class="fas fa-info-circle pr-2"></i>About</a></div>
-            </div>
-            <!-- Services-->
-            <div class="card">
-              <div class="card-header"><a class="mobile-menu-link" href="#"><i class="fas fa-cogs pr-2"></i>Services</a><a class="collapsed" href="#portfolio-submenu" data-toggle="collapse"></a></div>
-              <div class="collapse" id="portfolio-submenu" data-parent="#accordion-menu">
-                <div class="card-body">
-                  <ul class="mobile-sublevel">
-                    <li class="dropdown-item indent"><a href="phone-systems.html"><i class="fas fa-phone-office pr-2"></i>Phone Systems</a></li>
-                    <li class="dropdown-item"><a href="cctv.html"><i class="fas fa-webcam pr-2"></i>CCTV / Camera Systems</a></li>
-                    <li class="dropdown-item"><a href="structured-wiring.html"><i class="fas fa-ethernet pr-2"></i>Structured Wiring</a></li>
-                  </ul>
+        </div>
+        <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top: 60px;">
+            <!-- Mobile Menu-->
+            <div class="accordion mobile-menu" id="accordion-menu">
+                <!-- Home-->
+                <div class="card">
+                    <div class="card-header text-white"><a class="mobile-menu-link" href="index.html"><i class="fas fa-home"></i> Home</a></div>
                 </div>
-              </div>
+                <!-- About-->
+                <div class="card">
+                    <div class="card-header"><a class="mobile-menu-link" href="about.html"><i class="fas fa-info-circle pr-2"></i>About</a></div>
+                </div>
+                <!-- Services-->
+                <div class="card">
+                    <div class="card-header"><a class="mobile-menu-link" href="#"><i class="fas fa-cogs pr-2"></i>Services</a>
+                        <a class="collapsed" href="#portfolio-submenu" data-toggle="collapse"></a>
+                    </div>
+                    <div class="collapse" id="portfolio-submenu" data-parent="#accordion-menu">
+                        <div class="card-body">
+                            <ul class="mobile-sublevel">
+                                <li class="dropdown-item indent"><a href="phone-systems.html"><i class="fas fa-phone-office pr-2"></i>Phone Systems</a></li>
+                                <li class="dropdown-item"><a href="cctv.html"><i class="fas fa-webcam pr-2"></i>CCTV / Camera Systems</a></li>
+                                <li class="dropdown-item"><a href="structured-wiring.html"><i class="fas fa-ethernet pr-2"></i>Structured Wiring</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonials -->
+                <div class="card">
+                    <div class="card-header"><a class="mobile-menu-link" href="testimonials.html"><i class="fas fa-comments pr-2"></i>Testimonials</a></div>
+                </div>
+                <!-- Contact -->
+                <div class="card">
+                    <div class="card-header"><a class="mobile-menu-link" href="contact.html"><i class="fas fa-phone pr-2"></i>Contact</a></div>
+                </div>
+
+
             </div>
-            <!-- Testimonials -->
-            <div class="card">
-              <div class="card-header"><a class="mobile-menu-link" href="testimonials.html"><i class="fas fa-comments pr-2"></i>Testimonials</a></div>
-            </div>
-            <!-- Contact -->
-            <div class="card">
-              <div class="card-header"><a class="mobile-menu-link" href="contact.html"><i class="fas fa-phone pr-2"></i>Contact</a></div>
-            </div>
-  
-  
-          </div>
         </div>
         <div class="offcanvas-footer px-4 pt-3 pb-2 text-center">
-        <a class="social-btn sb-style-6 sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i>
-  </a></div>
-      </div>
-      <!-- /Mobile Nav-->
-  
-          <!-- Begin Main Nav -->
-      <header class="navbar-wrapper navbar-sticky">
-        <div class="d-table-cell align-middle pr-md-3"><a class="navbar-brand mr-1" href="home.html"><img src="img/FONET-logo.svg" style="max-width: 150px" alt="FONET-IP"/></a></div>
-        <div class="d-table-cell w-100 align-middle pl-md-3">
-          <div class="navbar-top d-none d-lg-flex justify-content-between align-items-center font-weight-bolder">
-            <div>
-              <a class="navbar-link mr-3" href="tel:(352)796-2300" data-toggle="tooltip" data-placement="bottom" title="Give us a call"><i class="fal fa-phone"></i> (352) 796-2300</a>
-              <!--<a class="navbar-link mr-3 fax" href="#" data-toggle="tooltip" data-placement="bottom" title="Send us a Fax"><i class="fal fa-fax"></i> (352) 796-3339</a>-->
-              <a class="navbar-link mr-3 text-uppercase" href="mailto:service@fonet-ip.com" data-toggle="tooltip" data-placement="bottom" title="Send us an e-mail"><i class="fal fa-envelope fa-lg"></i>service@fonet-ip.com</a>
-              <div class="fb-like" data-href="https://www.facebook.com/fonet.ip.inc" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-            </div>
-            <div>
-          </div>
-        </div>
-          <div class="navbar justify-content-end justify-content-lg-between">
-  
-            <!-- Main Menu-->
-            <ul class="navbar-nav d-none d-lg-block">
-              <!-- Home-->
-              <li class="nav-item"><a class="nav-link" href="home.html"><strong><i class="fas fa-home pr-2"></i>Home</strong></a></li>
-  
-              <!-- About -->
-              <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle pr-2"></i>About</a></li>
-   
-              <!-- Services-->
-              <li class="nav-item dropdown-toggle"><a class="nav-link" href="#"><i class="fas fa-cogs pr-2"></i>Services</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="phone-systems.html"><i class="fas fa-phone-office pr-2"></i>Phone Systems</a></li>
-                  <li class="dropdown-item"><a href="cctv.html"><i class="fas fa-webcam pr-2"></i>CCTV / Camera Systems</a></li>
-                  <li class="dropdown-item"><a href="structured-wiring.html"><i class="fas fa-ethernet pr-2"></i>Structured Wiring</a></li>
-                </ul>
-              </li>
-              <!-- Testimonials -->
-              <li class="nav-item"><a class="nav-link" href="testimonials.html"><i class="fas fa-comment pr-2"></i>Testimonials</a></li>
-            </ul>
-            <div>
-              <ul class="navbar-buttons d-inline-block align-middle mr-lg-2">
-                <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fas fa-bars white"></i></a></li>
-              </ul><a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="contact.html">Contact Us Today!</a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- /Main Nav-->
-    <!-- /Main Nav-->    <!-- Begin Mobile Nav-->
-    <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fas fa-times"></i></span>
-      <div class="px-4 pb-4">
-        <h6 class="fonet">Menu</h6>
-
-      </div>
-      <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top: 60px;">
-        <!-- Mobile Menu-->
-        <div class="accordion mobile-menu" id="accordion-menu">
-          <!-- Home-->
-          <div class="card">
-            <div class="card-header text-white"><a class="mobile-menu-link" href="index.html"><i class="fas fa-home"></i> Home</a></div>
-          </div>
-          <!-- About-->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" href="about.html"><i class="fas fa-info-circle pr-2"></i>About</a></div>
-          </div>
-          <!-- Services-->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" href="#"><i class="fas fa-cogs pr-2"></i>Services</a><a class="collapsed" href="#portfolio-submenu" data-toggle="collapse"></a></div>
-            <div class="collapse" id="portfolio-submenu" data-parent="#accordion-menu">
-              <div class="card-body">
-                <ul class="mobile-sublevel">
-                  <li class="dropdown-item indent"><a href="phone-systems.html"><i class="fas fa-phone-office pr-2"></i>Phone Systems</a></li>
-                  <li class="dropdown-item"><a href="cctv.html"><i class="fas fa-webcam pr-2"></i>CCTV / Camera Systems</a></li>
-                  <li class="dropdown-item"><a href="structured-wiring.html"><i class="fas fa-ethernet pr-2"></i>Structured Wiring</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Testimonials -->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" href="testimonials.html"><i class="fas fa-comments pr-2"></i>Testimonials</a></div>
-          </div>
-          <!-- Contact -->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" href="contact.html"><i class="fas fa-phone pr-2"></i>Contact</a></div>
-          </div>
-
-
-        </div>
-      </div>
-      <div class="offcanvas-footer px-4 pt-3 pb-2 text-center">
-      <a class="social-btn sb-style-6 sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i>
+            <a class="social-btn sb-style-6 sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i>
 </a></div>
     </div>
     <!-- /Mobile Nav-->
 
-        <!-- Begin Main Nav -->
+    <!-- Begin Main Nav -->
     <header class="navbar-wrapper navbar-sticky">
-      <div class="d-table-cell align-middle pr-md-3"><a class="navbar-brand mr-1" href="home.html"><img src="img/FONET-logo.svg" style="max-width: 150px" alt="FONET-IP"/></a></div>
-      <div class="d-table-cell w-100 align-middle pl-md-3">
-        <div class="navbar-top d-none d-lg-flex justify-content-between align-items-center font-weight-bolder">
-          <div>
-            <a class="navbar-link mr-3" href="tel:(352)796-2300" data-toggle="tooltip" data-placement="bottom" title="Give us a call"><i class="fal fa-phone"></i> (352) 796-2300</a>
-            <!--<a class="navbar-link mr-3 fax" href="#" data-toggle="tooltip" data-placement="bottom" title="Send us a Fax"><i class="fal fa-fax"></i> (352) 796-3339</a>-->
-            <a class="navbar-link mr-3 text-uppercase" href="mailto:service@fonet-ip.com" data-toggle="tooltip" data-placement="bottom" title="Send us an e-mail"><i class="fal fa-envelope fa-lg"></i>service@fonet-ip.com</a>
-            <div class="fb-like" data-href="https://www.facebook.com/fonet.ip.inc" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-          </div>
-          <div>
+        <div class="d-table-cell align-middle pr-md-3">
+            <a class="navbar-brand mr-1" href="home.html"><img src="img/FONET-logo.svg" style="max-width: 150px" alt="FONET-IP" /></a>
         </div>
-      </div>
-        <div class="navbar justify-content-end justify-content-lg-between">
+        <div class="d-table-cell w-100 align-middle pl-md-3">
+            <div class="navbar-top d-none d-lg-flex justify-content-between align-items-center font-weight-bolder">
+                <div>
+                    <a class="navbar-link mr-3" href="tel:(352)796-2300" data-toggle="tooltip" data-placement="bottom" title="Give us a call"><i class="fal fa-phone"></i> (352) 796-2300</a>
+                    <!--<a class="navbar-link mr-3 fax" href="#" data-toggle="tooltip" data-placement="bottom" title="Send us a Fax"><i class="fal fa-fax"></i> (352) 796-3339</a>-->
+                    <a class="navbar-link mr-3 text-uppercase" href="mailto:service@fonet-ip.com" data-toggle="tooltip" data-placement="bottom" title="Send us an e-mail"><i class="fal fa-envelope fa-lg"></i>service@fonet-ip.com</a>
+                    <div class="fb-like" data-href="https://www.facebook.com/fonet.ip.inc" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="navbar justify-content-end justify-content-lg-between">
 
-          <!-- Main Menu-->
-          <ul class="navbar-nav d-none d-lg-block">
-            <!-- Home-->
-            <li class="nav-item"><a class="nav-link" href="home.html"><strong><i class="fas fa-home pr-2"></i>Home</strong></a></li>
+                <!-- Main Menu-->
+                <ul class="navbar-nav d-none d-lg-block">
+                    <!-- Home-->
+                    <li class="nav-item"><a class="nav-link" href="home.html"><strong><i class="fas fa-home pr-2"></i>Home</strong></a></li>
 
-            <!-- About -->
-            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle pr-2"></i>About</a></li>
- 
-            <!-- Services-->
-            <li class="nav-item dropdown-toggle"><a class="nav-link" href="#"><i class="fas fa-cogs pr-2"></i>Services</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><a href="phone-systems.html"><i class="fas fa-phone-office pr-2"></i>Phone Systems</a></li>
-                <li class="dropdown-item"><a href="cctv.html"><i class="fas fa-webcam pr-2"></i>CCTV / Camera Systems</a></li>
-                <li class="dropdown-item"><a href="structured-wiring.html"><i class="fas fa-ethernet pr-2"></i>Structured Wiring</a></li>
-              </ul>
-            </li>
-            <!-- Testimonials -->
-            <li class="nav-item"><a class="nav-link" href="testimonials.html"><i class="fas fa-comment pr-2"></i>Testimonials</a></li>
-          </ul>
-          <div>
-            <ul class="navbar-buttons d-inline-block align-middle mr-lg-2">
-              <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fas fa-bars white"></i></a></li>
-            </ul><a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="contact.html">Contact Us Today!</a>
-          </div>
+                    <!-- About -->
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle pr-2"></i>About</a></li>
+
+                    <!-- Services-->
+                    <li class="nav-item dropdown-toggle"><a class="nav-link" href="#"><i class="fas fa-cogs pr-2"></i>Services</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="phone-systems.html"><i class="fas fa-phone-office pr-2"></i>Phone Systems</a></li>
+                            <li class="dropdown-item"><a href="cctv.html"><i class="fas fa-webcam pr-2"></i>CCTV / Camera Systems</a></li>
+                            <li class="dropdown-item"><a href="structured-wiring.html"><i class="fas fa-ethernet pr-2"></i>Structured Wiring</a></li>
+                        </ul>
+                    </li>
+                    <!-- Testimonials -->
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html"><i class="fas fa-comment pr-2"></i>Testimonials</a></li>
+                </ul>
+                <div>
+                    <ul class="navbar-buttons d-inline-block align-middle mr-lg-2">
+                        <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fas fa-bars white"></i></a></li>
+                    </ul><a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="contact.html">Contact Us Today!</a>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
-    <!-- /Main Nav-->
+    <!-- Page Content-->
     <!-- Page Content-->
     <!-- Page Header -->
     <section class="bg-signal">
@@ -246,12 +164,10 @@
             <h1 class="h2 block-title text-center text-white tshadow">Business Phone Systems</h1>
             <div class="row justify-content-center pt-2">
                 <div class="col-xl-8 col-lg-9 col-md-10">
-                    <p class="opacity-80 text-center text-white pshadow">Here at Fonet-IP, we are dealers for two of the
-                        leading brands in the telecommunication industry. NEC and Samsung, with both IP and digital
-                        phone systems. While working on most major phone systems, We also offer SIP AND Hosted Voice
-                        services. Let one of our knowledgeable sales staff talk with you today to see what fits your
-                        business needs. We service numerous bay area locations including Tampa, Spring Hill, New Port
-                        Richey, Hillsborough County, and Hernando County</p>
+                    <p class="opacity-80 text-center text-white pshadow">Here at Fonet-IP, we are dealers for two of the leading brands in the telecommunication industry. NEC and Samsung, with both IP and digital phone systems. While working on most major phone systems, We also offer SIP AND Hosted Voice
+                        services. Let one of our knowledgeable sales staff talk with you today to see what fits your business needs. We service numerous bay area locations including Tampa, Spring Hill, New Port Richey, Hillsborough County, and Hernando
+                        County
+                    </p>
                 </div>
             </div>
         </div>
@@ -268,17 +184,13 @@
                 <!-- Card -->
                 <div class="card col-lg-4 mb-30 text-center">
                     <a href="https://www.samsung.com/us/business/products/networking/smb/">
-                        <img src="/img/samsung-business-cardimg.jpg"
-                            alt="Samsung Business Phone Systems"
-                            onmouseover="this.src='/img/samsung-SMT-i6020.jpg';"
-                            onmouseout="this.src='/img/samsung-business-cardimg.jpg';">
+                        <img src="/img/samsung-business-cardimg.jpg" alt="Samsung Business Phone Systems" onmouseover="this.src='/img/samsung-SMT-i6020.jpg';" onmouseout="this.src='/img/samsung-business-cardimg.jpg';">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">Samsung</h4>
                         <div class="row pt-4">
                             <div class="col-lg-12">
-                                <a class="btn btn-style-6 btn-gradient btn-block"
-                                    href="https://www.samsung.com/us/business/products/networking/smb/"><i
+                                <a class="btn btn-style-6 btn-gradient btn-block" href="https://www.samsung.com/us/business/products/networking/smb/"><i
                                         class="fal fa-external-link pr-1" style="color: #ffffff;"></i>Website</a>
 
                             </div>
@@ -287,16 +199,13 @@
                 </div>
                 <div class="card col-lg-4 mb-30 text-center">
                     <a href="https://www.nec-enterprise.com/products/UNIVERGE-SV9100-19">
-                        <img src="/img/products/NEC/nec-cardimg.jpg" alt="NEC Univerge SV9100-19"
-                            onmouseover="this.src='/img/nec-ity8lcgx.jpg';"
-                            onmouseout="this.src='/img/nec-cardimg.jpg';">
+                        <img src="/img/products/NEC/nec-cardimg.jpg" alt="NEC Univerge SV9100-19" onmouseover="this.src='/img/nec-ity8lcgx.jpg';" onmouseout="this.src='/img/nec-cardimg.jpg';">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">NEC</h4>
                         <div class="row pt-4">
                             <div class="col-lg-12">
-                                <a class="btn btn-style-6 btn-gradient btn-block"
-                                    href="https://www.nec-enterprise.com/products/UNIVERGE-SV9100-19"><i
+                                <a class="btn btn-style-6 btn-gradient btn-block" href="https://www.nec-enterprise.com/products/UNIVERGE-SV9100-19"><i
                                         class="fal fa-external-link pr-1" style="color: #ffffff;"></i>Website</a>
 
                             </div>
@@ -307,24 +216,25 @@
 
     <!-- Footer-->
     <footer class="d-lg-flex align-items-center bg-footer sdw">
-      <div class="w-100 py-5 px-4">
-        <div class="mx-auto text-center" style="max-width: 340px;">
-          <h6 class="text-sm font-weight-medium text-white text-uppercase text-center">Want to contact us?</h6>
-          <ul class="list-unstyled text-white">
-            <li><a href="tel:352.896.2300" class="text-white" style="text-decoration: none;"><span class='opacity-60'><i class="fas fa-phone pr-2"></i></span> (352) 796-2300</a></li>
-            <!--<li><a href="#" class="text-white" style="text-decoration: none;"><span class='opacity-60'><i class="fas fa-fax"></i></span> (352) 796-3339</a></li>-->
-            <li><a href="mailto:service@fonet-ip.com" class="text-white" style="text-decoration: none;"><span class='opacity-60'><i class="fas fa-envelope pr-2"></i></span> service@fonet-ip.com</a></li>
-          </ul>
-          <div class="widget pt-3 mb-4"><a class="social-btn sb-style-6 sb-facebook sb-light-skin" href="#"><i class="fab fa-facebook-f"></i></a></div>
-          <p class="m-0 text-sm text-white"><span class='opacity-60'> <i class="fas fa-copyright"></i> <script>document.write(new Date().getFullYear())</script> All rights reserved.<br> Made with</span> <i class='d-inline-block align-middle'><i class="fas fa-heart text-danger"></i></i> <a href='#' class='d-inline-block nav-link text-white opacity-60 p-0' target='_blank' style="text-decoration: none;">by <span class="B26">B26</span></a></p>
+        <div class="w-100 py-5 px-4">
+            <div class="mx-auto text-center" style="max-width: 340px;">
+                <h6 class="text-sm font-weight-medium text-white text-uppercase text-center">Want to contact us?</h6>
+                <ul class="list-unstyled text-white">
+                    <li><a href="tel:352.896.2300" class="text-white" style="text-decoration: none;"><span class='opacity-60'><i class="fas fa-phone pr-2"></i></span> (352) 796-2300</a></li>
+                    <!--<li><a href="#" class="text-white" style="text-decoration: none;"><span class='opacity-60'><i class="fas fa-fax"></i></span> (352) 796-3339</a></li>-->
+                    <li><a href="mailto:service@fonet-ip.com" class="text-white" style="text-decoration: none;"><span class='opacity-60'><i class="fas fa-envelope pr-2"></i></span> service@fonet-ip.com</a></li>
+                </ul>
+                <div class="widget pt-3 mb-4"><a class="social-btn sb-style-6 sb-facebook sb-light-skin" href="#"><i class="fab fa-facebook-f"></i></a></div>
+                <p class="m-0 text-sm text-white"><span class='opacity-60'> <i class="fas fa-copyright"></i> <script>document.write(new Date().getFullYear())</script> All rights reserved.<br> Made with</span> <i class='d-inline-block align-middle'><i class="fas fa-heart text-danger"></i></i>
+                    <a href='#' class='d-inline-block nav-link text-white opacity-60 p-0' target='_blank' style="text-decoration: none;">by <span class="B26">B26</span></a></p>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- Back To Top Button-->
     <a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
     <!-- Backdrop-->
     <div class="site-backdrop"></div>
-  <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
     <script src="js/vendor2.min.js"></script>
     <script src="js/theme.min.js"></script>
 </body>
